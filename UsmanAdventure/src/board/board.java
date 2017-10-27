@@ -1,24 +1,24 @@
 package board;
 
-import rooms.Room;
+import places.places;
 
-public class Board {
-
-
-    private Room[][] schoolMap;
+public class board {
 
 
+    private Room[][] HospitalMap;
 
-    public Board(Room[][] schoolMap)
+
+
+    public board(Room[][] HospitalMap)
     {
-        this.schoolMap = schoolMap;
+        this.HospitalMap = HospitalMap;
     }
 
     public void printMap()
     {
 
 
-        for(Room[] row : schoolMap)
+        for(Room[] row : HospitalMap)
         {
             for (Room room : row)
             {
@@ -27,12 +27,12 @@ public class Board {
             System.out.println();
         }
     }
-    public Room[][] getSchoolMap() {
-        return schoolMap;
+    public Room[][] getHospitalMap() {
+        return HospitalMap;
     }
 
-    public void setSchoolMap(Room[][] schoolMap) {
-        this.schoolMap = schoolMap;
+    public void setHospitalMap(Room[][] HospitalMap) {
+        this.HospitalMap = HospitalMap;
     }
 
 
