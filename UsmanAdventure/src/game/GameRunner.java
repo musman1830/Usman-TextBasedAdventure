@@ -1,7 +1,7 @@
 package game;
 
 import items.Item;
-import rooms.*;
+import places.*;
 import people.Person;
 
 import java.util.Scanner;
@@ -25,7 +25,7 @@ public class GameRunner {
 
         }
 
-        School tech = new School(map);
+        Death house = new Death();
 
 
         boolean gameOn = true;
@@ -33,13 +33,13 @@ public class GameRunner {
         Scanner in = new Scanner(System.in);
         while(gameOn)
         {
-            System.out.println("Welcome to the Halls of Tech, " + player1.getFirstName());
+            System.out.println("Welcome to the Death House, " + player1.getFirstName());
             map[0][0].addOccupant(player1);
 
-            tech.printMap();
+            ((Death) house).printMap();
             player1.printRoom();
             String move = player1.chooseMove();
-            Utilities.movePlayer(tech, player1,move);
+            Utilities.movePlayer(house, player1,move);
             //gameOn = false;
             
 

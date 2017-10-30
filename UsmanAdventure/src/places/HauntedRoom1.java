@@ -1,6 +1,6 @@
 package places;
 
-public class Lab {
+public class HauntedRoom1 extends {
 	public lab(boolean[] doors, Person[] people, Item[] items, int x, int y)
     {
         super(doors, people, items, x, y);

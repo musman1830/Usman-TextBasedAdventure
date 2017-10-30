@@ -5,20 +5,20 @@ import places.places;
 public class board {
 
 
-    private Room[][] HospitalMap;
+    private Room[][] DeathHouseMap;
 
 
 
-    public board(Room[][] HospitalMap)
+    public board(Room[][] DeathHouseMap)
     {
-        this.HospitalMap = HospitalMap;
+        this.DeathHouseMap = DeathHouseMap;
     }
 
     public void printMap()
     {
 
 
-        for(Room[] row : HospitalMap)
+        for(Room[] row : DeathHouseMap)
         {
             for (Room room : row)
             {
@@ -27,12 +27,12 @@ public class board {
             System.out.println();
         }
     }
-    public Room[][] getHospitalMap() {
-        return HospitalMap;
+    public Room[][] DeathHouseMap() {
+        return DeathHouseMap;
     }
 
-    public void setHospitalMap(Room[][] HospitalMap) {
-        this.HospitalMap = HospitalMap;
+    public void setDeathHouseMap(Room[][] DeathHouseMap) {
+        this.DeathHouseMap = DeathHouseMap;
     }
 
 
