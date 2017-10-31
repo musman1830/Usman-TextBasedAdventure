@@ -26,7 +26,7 @@ public class HauntedRoom1 extends {
     public String toString()
     {
     	boolean[] doors = this.getDoors();
-    	String response = "This room is a hallway. It has doors to the ";
+    	String response = "This room is a entering room. You will need to find the door for the next room but beware you are in for a scare! ";
     	if (doors[0])
     	{
     		response += "N";

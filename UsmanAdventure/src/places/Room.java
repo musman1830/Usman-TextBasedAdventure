@@ -1,6 +1,13 @@
 package places;
 
 public class Room {
+
+	
+
+	public void addOccupant(Person player1) {
+		// TODO Auto-generated method stub
+		
+	}
 	package rooms;
 
 	import people.Person;

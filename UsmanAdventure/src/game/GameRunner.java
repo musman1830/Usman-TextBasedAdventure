@@ -20,7 +20,7 @@ public class GameRunner {
                 Person[] people = {};
                 Item[] items = {};
 
-                row[i] = new Hallway(doors, people, items, i, j);
+                row[i] = new Room();
             }
 
         }
@@ -34,7 +34,7 @@ public class GameRunner {
         while(gameOn)
         {
             System.out.println("Welcome to the Death House, " + player1.getFirstName());
-            map[0][0].addOccupant(player1);
+            ((Room) map[0][0]).addOccupant(player1);
 
             ((Death) house).printMap();
             player1.printRoom();
