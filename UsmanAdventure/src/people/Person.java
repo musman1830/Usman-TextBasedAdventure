@@ -19,6 +19,11 @@ public class Person {
 		
 	}
 	
+	private void setHome(people.Borough home) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	public static String createNickname(String name) {
 		String nickname = "";
 		int timesVow = 0;
@@ -76,10 +81,7 @@ public class Person {
 		return null;
 	}
 
-	public void printRoom() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	
 

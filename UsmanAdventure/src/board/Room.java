@@ -1,5 +1,7 @@
 package board;
 
+import people.Person;
+
 public class Room {
 
 	public void print() {
@@ -7,9 +9,10 @@ public class Room {
 		
 	}
 
-	public void print() {
+	public void addOccupant(Person player1) {
 		// TODO Auto-generated method stub
 		
 	}
+
 
 }

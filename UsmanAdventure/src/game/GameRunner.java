@@ -6,6 +6,8 @@ import people.Person;
 
 import java.util.Scanner;
 
+import board.Room;
+
 public class GameRunner {
 
     public static void main (String[] args)

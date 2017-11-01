@@ -1,16 +1,18 @@
 package places;
 
 public class HauntedRoom1 extends {
-	public lab(boolean[] doors, Person[] people, Item[] items, int x, int y)
+	private boolean explored;
+
+	public HauntedRoom1(boolean[] doors, Person[] people, Item[] items, int x, int y)
     {
         super(doors, people, items, x, y);
     }
 
-    public void print()
+    public boolean print()
     {
         if (getOccupants().length != 0)
         {
-            System.out.print(getOccupants()[0].print());
+            System.out.println(((HauntedRoom1) getOccupants()[0]).print());
         }
         else if (this.explored)
         {
@@ -23,10 +25,15 @@ public class HauntedRoom1 extends {
 
     }
     
-    public String toString()
+    private Object[] getOccupants() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String toString()
     {
     	boolean[] doors = this.getDoors();
-    	String response = "This room is a entering room. You will need to find the door for the next room but beware you are in for a scare! ";
+    	String response = "This room is the entering room. You will need to find the door for the next room but beware you are in for a scare! ";
     	if (doors[0])
     	{
     		response += "N";
@@ -46,7 +53,12 @@ public class HauntedRoom1 extends {
     	
     	return response;
     }
+
+	private boolean[] getDoors() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 
 
-}
+

@@ -27,4 +27,9 @@ public class HauntedRoom5 {
     	
     	return response;
     }
+
+	private boolean[] getDoors() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
