@@ -67,13 +67,13 @@ public class Place extends Board {
 				
 				if ( !ans.equals("yes") && !ans.equals("no") ) {
 					
-					System.out.println("Sorry wrong answer you die");
+					System.out.println("Oh I think you shold not have done that... Goodbye!");
 					return false;
 				}
 				
 				if ( !ans.equals( answers[idx] ) ) {
 					
-					System.out.println("Sorry wrong answer you die");
+					System.out.println("Sorry wrong choice you have died");
 					return false;
 				
 				} 
