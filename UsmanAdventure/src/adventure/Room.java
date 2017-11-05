@@ -1,6 +1,6 @@
 package adventure;
 
-public class Room {
+public class Room implements RoomI {
 	private String description;
 	
 	public String getDescription() {
@@ -13,10 +13,5 @@ public class Room {
 
 	public Room(String s) {
 		this.description = s;
-	}
-
-	public String toString() {
-		if(description == null) return "  XXX  ";
-		return description;
 	}
 }
