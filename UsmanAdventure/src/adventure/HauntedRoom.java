@@ -2,32 +2,23 @@ package adventure;
 
 public class HauntedRoom extends Room {
 	
-	String[] questions;
-	String[] answers;
+	String[] questions ;
+	String[] answers   ;
+	String[] guess_ok  ;
+	String[] guess_err ;
 	
 	public HauntedRoom(String description) {
 		super(description);
 	}
 	
-	public HauntedRoom(String description, String[] questions, String[] answers) {
+	public HauntedRoom(String description, String[] questions, String[] answers, String[] guess_ok, String[] guess_err) {
 		super(description);
 		
-		this.answers   = answers   ;
-		this.questions = questions ;
-	}
-
-	public void setQuestions(String[] questions) {
+		this.answers    = answers    ;
+		this.questions  = questions  ;
+		this.guess_ok   = guess_ok   ; 
+		this.guess_err  = guess_err  ; 
 		
-		this.questions = questions ;
-	}
-
-	public void setAnswers(String[] answers) {
-		
-		this.answers = answers;
-	}
-
-	// we need this ?!
-	public void setCleared(boolean b) {
 	}
 
 	public String[] getQuestions() {
@@ -40,6 +31,16 @@ public class HauntedRoom extends Room {
 		return this.answers;
 	}
 
+	public String[] getGuessOk() {
+		
+		return this.guess_ok;
+	}
+
+	public String[] getGuessErr() {
+		
+		return this.guess_err;
+	}
+	
 	public boolean is_valid() {
 		
 		if ( 	(this.questions.length > 0 )

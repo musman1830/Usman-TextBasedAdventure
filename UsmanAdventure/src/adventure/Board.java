@@ -1,12 +1,11 @@
 package adventure;
 
-public class Board {
+public class Board implements BoardI {
 	
-  //HauntedRoom current; // this is used ?!
 	HauntedRoom[] rooms;
 	
 	/**
-	 * Creates game board that's 5x5
+	 * Creates game board [ 5 rooms ]
 	 */
 	public Board() {
 		this(5);
